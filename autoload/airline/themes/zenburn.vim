@@ -7,7 +7,7 @@ function! s:generate()
 
   let s:N1 = airline#themes#get_highlight2(['DbgCurrent', 'bg'], ['Folded', 'fg'], 'bold')
   let s:N2 = airline#themes#get_highlight('Folded')
-  let s:N3 = airline#themes#get_highlight('NonText')
+  let s:N3 = airline#themes#get_highlight('Folded')
 
   let g:airline#themes#zenburn#palette.normal = airline#themes#generate_color_map(s:N1, s:N2, s:N3)
   let s:Nmod = airline#themes#get_highlight('Comment')
